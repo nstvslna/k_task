@@ -9,8 +9,7 @@ index_reasonable = words.index("reasonable")
 index_unreasonable = words.index("unreasonable")
 
 # Змінюємо позиції
-words[index_reasonable] = words[index_unreasonable]
-words[index_unreasonable] = words[index_reasonable]
+words[index_reasonable], words[index_unreasonable] = words[index_unreasonable], words[index_reasonable]
 
 # Об'єднуємо список в рядок
 new_quote = " ".join(words)
